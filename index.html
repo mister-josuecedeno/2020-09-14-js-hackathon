@@ -3,19 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2020-09-14-js-hackathon</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="shortcut icon" href="./favicon.ico">
+    <title>Microsoft Paint Clone</title>
   </head>
   <body>
-    <main class="body-outer">
-      <div class="body-inner">
-        <h1>2020-09-14-js-hackathon</h1>
-        <h2>HAPPY HACKING!</h2>
-        <p>Counter: <span id="output">0</span></p>
-        <button id="increment-button">Increment</button>
+    <div class="wrapper">
+      <div class="title"><i class="fas fa-palette"></i> untitled - Paint</div>
+
+      <div class="board">
+        <!-- <div class="paper" id="draw">Canvas</div> -->
+        <canvas class="paper" id="draw"></canvas>
       </div>
-    </main>
+
+      <div class="tools">
+        <div class="thickness">
+          <!-- Brush thickness -->
+          <i class="fas fa-paint-brush"></i>
+          <input
+            type="range"
+            id="thickness"
+            name="thickness"
+            min="0"
+            max="100"
+            value="25"
+          />
+          <label for="volume">Thickness</label>
+
+          <!-- Divider -->
+          <span class="divider" id="divider1">|</span>
+        </div>
+
+        <!-- paint color -->
+        <i class="fas fa-palette"></i>
+        <button
+          data-color="#ffbb00"
+          class="paint"
+          id="yellow"
+          aria-label="Yellow"
+        ></button>
+        <button
+          data-color="#7cbb00"
+          class="paint"
+          id="green"
+          aria-label="Green"
+        ></button>
+        <button
+          data-color="#00a1f1"
+          class="paint"
+          id="blue"
+          aria-label="Blue"
+        ></button>
+        <button
+          data-color="#f65314"
+          class="paint"
+          id="red"
+          aria-label="Red"
+        ></button>
+
+        <!-- Divider -->
+        <span class="divider">|</span>
+
+        <!-- Eraser -->
+        <span id="eraser"
+          ><i class="fas fa-eraser" data-color="#ffffff"></i
+        ></span>
+      </div>
+    </div>
+
+    <!-- Javascript -->
     <script src="./src/index.js"></script>
   </body>
 </html>

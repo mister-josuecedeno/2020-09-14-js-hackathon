@@ -5,22 +5,131 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.body-outer {
-  display: inline-block;
-  background: #02ed9d;
-  background: linear-gradient(180deg, #02ed9d, #009be2);
-  padding: 2px;
-  margin: 20px;
+div {
+  border: 1px solid gray;
 }
 
-.body-inner {
-  display: inline-block;
-  padding: 10px 20px;
-  min-width: 300px;
-  background-color: white;
+i {
+  margin-right: 0.5em;
 }
 
+.divider {
+  font-size: 2em;
+  padding: 0 0.5em;
+  color: gray;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: [title] auto [tools] auto [board] 90vh [footer] auto;
+  border: 1px solid #00a2ed;
+}
+
+/* Title */
+.title {
+  grid-column: 1 / 4;
+  grid-row-start: title;
+  background: #00a2ed;
+  color: white;
+  padding: 0.75em;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* canvas */
+.board {
+  grid-column: 1 / 4;
+  grid-row-start: board;
+  background: gray;
+  padding: 0.5em;
+}
+
+.paper {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* Tools */
+.tools {
+  padding: 0.75em;
+  grid-column: 1 / 4;
+  grid-row: tools;
+  background: rgb(198, 198, 198);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* THickness */
+.thickness {
+  border: 1px solid rgb(198, 198, 198);
+}
+
+/* buttons */
 button {
+  width: 2em;
+  height: 2em;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
   cursor: pointer;
-  padding: 10px;
+}
+
+/* Paints */
+
+#yellow {
+  background: #ffbb00;
+}
+
+#green {
+  background: #7cbb00;
+}
+
+#blue {
+  background: #00a1f1;
+}
+
+#red {
+  background: #f65314;
+}
+
+/* Eraser */
+
+#eraser {
+  cursor: pointer;
+}
+
+#eraser:hover {
+  color: #00a1f1;
+}
+
+@media screen and (max-width: 600px) {
+  /* Thickness */
+  .thickness {
+    flex-basis: 100%;
+  }
+
+  #divider1 {
+    opacity: 0;
+  }
 }
