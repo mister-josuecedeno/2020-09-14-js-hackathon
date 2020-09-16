@@ -31,25 +31,14 @@ function draw(e) {
 // Add Eventlisteners
 
 canvas.addEventListener('mousedown', (e) => {
-  isDrawing = true;
-  [lastX, lastY] = [e.offsetX, e.offsetY];
-});
-
-// for mobile ...
-canvas.addEventListener('touchstart', (e) => {
+  console.log('mousedown');
   isDrawing = true;
   [lastX, lastY] = [e.offsetX, e.offsetY];
 });
 
 canvas.addEventListener('mousemove', draw);
 
-// for mobile
-canvas.addEventListener('touchmove', draw);
-
 canvas.addEventListener('mouseup', () => (isDrawing = false));
-
-// for mobile
-canvas.addEventListener('touchend', () => (isDrawing = false));
 
 canvas.addEventListener('mouseout', () => (isDrawing = false));
 
