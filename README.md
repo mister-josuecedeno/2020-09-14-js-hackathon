@@ -1,4 +1,5 @@
 # 2020-09-14-js-hackathon
+
 Mintbean.io - JS Hackathon 1 (Sep 14, 2020)
 
 Objective
@@ -12,7 +13,6 @@ Eraser - by clicking the eraser the user may erase the content (Tip: using the t
 Help
 If you have any questions or comments, please feel free to contact me via Twitter or LinkedIn
 
-Twitter - @josue_cedeno
+Twitter - https://twitter.com/josue_cedeno
 
 LinkedIn - https://www.linkedin.com/in/josuecedeno/
-
