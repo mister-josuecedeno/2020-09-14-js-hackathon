@@ -12,8 +12,9 @@ Eraser - by clicking the eraser the user may erase the content (Tip: using the t
 ## Help
 If you have any questions or comments, please feel free to contact me via Twitter or LinkedIn
 
-Twitter - @josue_cedeno
+Twitter - https://twitter.com/josue_cedeno
 
 LinkedIn - https://www.linkedin.com/in/josuecedeno/
 
 ## Screenshot
+<img width="739" alt="2020-09-14_hackathon-01" src="https://user-images.githubusercontent.com/47830532/93353134-310fdb80-f801-11ea-84d6-f31b44b2a625.png">
