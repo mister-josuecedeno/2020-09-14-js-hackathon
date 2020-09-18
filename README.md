@@ -21,5 +21,6 @@ Twitter - https://twitter.com/josue_cedeno
 LinkedIn - https://www.linkedin.com/in/josuecedeno/
 
 ## Screenshot
-<img width="367" alt="instructions" src="https://user-images.githubusercontent.com/47830532/93543820-2731c980-f922-11ea-9385-14f510394588.png">
+<img width="739" alt="2020-09-14_hackathon-01" src="https://user-images.githubusercontent.com/47830532/93544238-2c434880-f923-11ea-9179-988f7888a22f.png">
+
 
