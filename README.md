@@ -2,6 +2,9 @@
 
 Mintbean.io - JS Hackathon 1 (Sep 14, 2020)
 
+## Demo
+https://mister-josuecedeno.github.io/2020-09-14-js-hackathon/
+
 ## Objective
 
 Build a Microsoft paint clone using HTML, CSS, and Javascript
